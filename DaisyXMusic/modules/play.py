@@ -414,6 +414,7 @@ async def m_cb(b, cb):
                 ],
                 [
                     InlineKeyboardButton("Playlist 📖", "playlist"),
+                    InlineKeyboardButton(text="🎀Support🎀", url=f"https://t.me/{SUPPORT_GROUP}"),
                 ],
                 [InlineKeyboardButton("❌ Close", "cls")],
             ]
@@ -552,7 +553,10 @@ async def play(_, message: Message):
                     InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
                     InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
                 ],
-                [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
+                [
+                    InlineKeyboardButton(text="❌ Close", callback_data="cls"),
+                    InlineKeyboardButton(text="🎀Support🎀", url=f"https://t.me/{SUPPORT_GROUP}"),
+                ],
             ]
         )
         file_name = get_file_name(audio)
