@@ -457,7 +457,7 @@ async def play(_, message: Message):
     global useer
     if message.chat.id in DISABLED_GROUPS:
         return    
-    lel = await message.reply("📡 <b>Processing</b> Your Request! 📡")
+    lel = await message.reply("💫 <b>Processing</b> Your Request! 💫")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -512,7 +512,7 @@ async def play(_, message: Message):
         )
         return
     text_links=None
-    await lel.edit("📡 <b>Finding</b> Your Request! 📡")
+    await lel.edit("💫 <b>Finding</b> Your Request!💫")
     if message.reply_to_message:
         if message.reply_to_message.audio:
             pass
