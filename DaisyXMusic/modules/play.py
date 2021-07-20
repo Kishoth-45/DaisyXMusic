@@ -512,7 +512,7 @@ async def play(_, message: Message):
         )
         return
     text_links=None
-    await lel.edit("💫 <b>Finding</b> Your Request!💫")
+    await lel.edit("🍃<b>Finding</b> Your Request!🍂")
     if message.reply_to_message:
         if message.reply_to_message.audio:
             pass
